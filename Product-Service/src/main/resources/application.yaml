@@ -13,3 +13,10 @@ spring:
       ddl-auto: update
   config:
     import: optional:configserver:http://localhost:8888
+  zipkin:
+    base-url: http://127.0.0.1:9411/
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0
