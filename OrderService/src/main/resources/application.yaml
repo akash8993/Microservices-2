@@ -1,6 +1,3 @@
-spring:
-  application:
-    name: OrderService
 
 server:
   port: 8082
@@ -15,3 +12,16 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
+  config:
+    import: optional:configserver:http://localhost:8888
+
+#We are fetching it from config server now
+#eureka:
+#  instance:
+#    prefer-ip-address: true
+#  client:
+#    fetch-registry: true
+#    register-with-eureka: true
+#    service-url:
+#      defaultZone: ${EUREKA_SERVER_ADDRESS:http://localhost:8761/eureka}
+
