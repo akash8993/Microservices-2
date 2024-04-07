@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="api-gateway" />
         <module name="config-server" />
         <module name="OrderService" />
         <module name="Product-Service" />
@@ -20,6 +21,7 @@
       <module name="OrderService" options="-parameters" />
       <module name="Payment-Service" options="-parameters" />
       <module name="Product-Service" options="-parameters" />
+      <module name="api-gateway" options="-parameters" />
       <module name="config-server" options="-parameters" />
       <module name="service-registry" options="-parameters" />
     </option>
